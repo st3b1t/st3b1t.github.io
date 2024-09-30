@@ -36,7 +36,7 @@ nav {
 }
 #avatar {
 	position: absolute;
-	top: 50%;
+	top: 55%;
 	left: 50%;
 	margin-top: -100px;
 	margin-left: -100px;
@@ -48,29 +48,46 @@ nav {
 pre:hover{
 	color: white;
 }
+@media screen and (max-width: 500px) {
+	nav > a {
+		display: block;
+		letter-spacing: 2px;
+		font-size: 20px !important;
+	}
+	.sep {
+		display: none;
+	}
+	nav:first-of-type {
+		margin-top: 220px;
+	}
+	#avatar {
+		position: absolute;
+		top: 150px;
+	}
+	#ascii {
+		display: none;
+	}
+}
 </style>
 </head>
 <body>
 	<h1>st3b1t links</h1>
 <div>
 <nav id="contacts">
-[ contacts:
-<a href="https://st3b1t.github.io">Website</a> |
-<a href="https://github.com/st3b1t">Github</a> |
-<a href="https://gist.github.com/st3b1t">Gist</a> |
-<a href="https://x.com/st3b1t">X</a> |
-<a href="https://www.reddit.com/user/st3b1t">Reddit</a> |
-<a href="https://primal.net/p/npub1vv3d0d7syvzl4v4ue4sdg885lmuf78lrmugfpx930nd2qppgp7cs072vae">Nostr</a> |
-<a href="st3b1t.asc">PGP</a> ]
-</nav>
-<nav id="projects">
-[ projects:
-	<a href="https://github.com/st3b1t/SatoshiTop">SatoshiTop</a> |
-	<a href="https://st3b1t.github.io/github-pgp-keyid">Github PGP KeyID</a>
-	]
+<span class="sep">[</span> contacts:
+<a href="https://github.com/st3b1t">Github</a> <span class="sep">|</span>
+<a href="https://gist.github.com/st3b1t">Gist</a> <span class="sep">|</span>
+<a href="https://x.com/st3b1t">X</a> <span class="sep">|</span>
+<a href="https://www.reddit.com/user/st3b1t">Reddit</a> <span class="sep">|</span>
+<a href="https://primal.net/p/npub1vv3d0d7syvzl4v4ue4sdg885lmuf78lrmugfpx930nd2qppgp7cs072vae">Nostr</a> <span class="sep">|</span>
+<a href="st3b1t.asc">PGP</a>
+<span class="sep">]</span>
 </nav>
 <nav>
-	[ donate: <a href="https://getalby.com/p/st3b1t">sats via LN</a> ]
+<span class="sep">[</span>
+ donate: <a href="https://getalby.com/p/st3b1t">sats via LN</a>
+<span class="sep">]</span>
+
 </nav>
 </div>
 <img id="avatar" src="https://avatars.githubusercontent.com/u/113633676" />
